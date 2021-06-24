@@ -22,7 +22,7 @@ app = Flask(__name__)
 # switches from deployment to development sever
 ENV = 'dev'
 
-if ENV == 'dev':
+if ENV == 'prod':
     app.debug = True
     # database config is 'postgresql://username:password@serveradress/servername
     app.config['SQLALCHEMY_DATABASE_URI'] = \

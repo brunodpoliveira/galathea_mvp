@@ -1,6 +1,7 @@
-# Instructions to install and run the databases correctly:
+# Instructions to install and run the databases locally correctly:
 
 - create "gala_chatbot" and "gala_feedback" blank databases in postgresql (code tested on pgAdmin4)
+- Open Terminal, install guinicorn locally by typing pip install gunicorn on terminal
 - Open terminal, type "python"
 - type these instructions:
 >>> from app import db
@@ -19,6 +20,8 @@
 - run chatbot.py to finish the training
 - comment both training lists 
 - run/test program typing python app.py
+
+See APP_DEPLOY_HEROKU if you want to deploy this app online
 
 
 

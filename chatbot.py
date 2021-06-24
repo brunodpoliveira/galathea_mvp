@@ -17,7 +17,7 @@ maximum_similarity_threshold:
 maximum amount of similarity between 2 statement required before the search process is halted(default:0.95)
 """
 bot = ChatBot('chatbot_test',
-              read_only=False,
+              read_only=True,
               response_selection_method=get_first_response,
               logic_adapters=[{'import_path': 'chatterbot.logic.BestMatch',
                                "response_selection_method": 'chatterbot.response_selection.get_first_response',
