@@ -26,13 +26,7 @@ bot = ChatBot('chatbot_test',
                                'maximum_similarity_threshold': 0.90
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
-              # TODO CHANGE DATABASE URI LOGIC SO AS TO NOT APPEAR ON CODE - OBSFUCATE IT SOMEHOW
-              database_uri='postgresql://postgres:postgres@localhost/gala_chatbot', )
-# local - dev config
-# database_uri='postgresql://postgres:postgres@localhost/gala_chatbot',)
-
-# online - prod config
-# database_uri='postgres://iuznelluxbwsrr:04344ff8343fb2d24f6b53b255898a9cb97ed35024511a8c33cf62e83962e19b@ec2-52-22-238-188.compute-1.amazonaws.com:5432/d7adm1a9fde7ib',)
+              database_uri='postgres: // zgxkmcyqmtbatf: e673ec62df8cc8da9fc437c335c0d7a185ebb89943435e0c33c0a2d52457dc35 @ ec2 - 54 - 91 - 188 - 254.compute - 1.amazonaws.com: 5432 / d3s3flqffn3aj3', )
 # --------------------------------------
 
 # Corpus Trainer
@@ -40,18 +34,20 @@ corpus_trainer = ChatterBotCorpusTrainer(bot)
 
 # use this line and comment out the complete pack if
 # you feel like doing some quick testing
-# corpus_trainer.train('data/greetings.yml')
-
+corpus_trainer.train('data/greetings.yml')
+"""
 corpus_trainer.train('data/botprofile.yml', 'data/compliment.yml', 'data/computers.yml', 'data/context_free_br.yml',
                      'data/conversations.yml', 'data/emotion.yml', 'data/food.yml', 'data/games.yml',
                      'data/gossip.yml', 'data/greetings.yml', 'data/health.yml', 'data/history.yml',
                      'data/linguistic_knowledge.yml', 'data/literature.yml', 'data/money.yml', 'data/movies.yml',
                      'data/politics.yml', 'data/proverbs.yml', 'data/psychology.yml', 'data/science.yml',
                      'data/sports.yml', 'data/suggestions.yml', 'data/trivia.yml', 'data/unilab.yml')
-
+"""
 
 # --------------------------------------
-# Conversation Loop - terminal only (TODO DOES NOT WORK - see if we can make it work on terminal somehow)
+# Conversation Loop - terminal only
+
+
 def conversation():
     while True:
         try:
@@ -66,6 +62,12 @@ def conversation():
         # CONTROL+D to exit
         except (KeyboardInterrupt, EOFError, SystemExit):
             break
+
+
+"""          
+if __name__ == "__main__":
+    conversation()
+"""
 
 # --------------------------------------
 # type python chatbot.py -h localhost to train the chatbot database

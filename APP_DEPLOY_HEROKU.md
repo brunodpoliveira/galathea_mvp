@@ -1,6 +1,6 @@
 # Python Heroku Deployment
 
-> Steps to create a postgres database and deply a Python app to Heroku
+> Steps to create a postgres database and deploy this Python app to Heroku
 
 ### Install guinicorn locally
 ```
@@ -52,7 +52,7 @@ pip freeze > requirements.txt
 touch runtime.txt
 
 # Add this
-python-3.7.2
+python-3.8
 ```
 
 ### Deploy with Git
@@ -65,11 +65,27 @@ git push heroku master
 
 ### Add table to remote database
 ```
-heroku run python
+heroku run python --app appname
 >>> from app import db
 >>> db.create_all()
 >>>exit()
 ```
+
+### Prepare Database
+```
+comment the big training list (chatbot.py,lines 48-53)
+decomment the "greetings.yml" training line (line 45)
+run chatbot.py to create the database
+go to your database, alter table properties:
+statement:length/precision of text,search_text,in_response_to,search_in_response_to to 1,000
+statement:length/precision of conversation,persona to 100
+tag: length/precision of name to 100
+decomment the big training list (lines 48-53)
+comment the greetings training line (line 45)
+run chatbot.py to finish the training
+comment both training lists 
+```
+
 ### Visit app
 ```
 heroku open

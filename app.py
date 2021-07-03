@@ -20,7 +20,7 @@ class MySQLAlchemy(SQLAlchemy):
 # GUI + website
 app = Flask(__name__)
 # switches from deployment to development sever
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'prod':
     app.debug = True
@@ -31,7 +31,7 @@ if ENV == 'prod':
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = \
-        'postgres://egvqhrquerukmm:5722157bfcd68335a93ddd19278b402ce149c7f4cbe32e7f57e4360e5d85f3db@ec2-54-157-4-216.compute-1.amazonaws.com:5432/d4vosr78ieedeq'
+        'postgres: // zgxkmcyqmtbatf: e673ec62df8cc8da9fc437c335c0d7a185ebb89943435e0c33c0a2d52457dc35 @ ec2 - 54 - 91 - 188 - 254.compute - 1.amazonaws.com: 5432 / d3s3flqffn3aj3'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
