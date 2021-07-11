@@ -31,7 +31,7 @@ if ENV == 'prod':
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = \
-        'postgres: // zgxkmcyqmtbatf: e673ec62df8cc8da9fc437c335c0d7a185ebb89943435e0c33c0a2d52457dc35 @ ec2 - 54 - 91 - 188 - 254.compute - 1.amazonaws.com: 5432 / d3s3flqffn3aj3'
+        'postgres://zgxkmcyqmtbatf:e673ec62df8cc8da9fc437c335c0d7a185ebb89943435e0c33c0a2d52457dc35@ec2-54-91-188-254.compute-1.amazonaws.com:5432/d3s3flqffn3aj3'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
