@@ -21,11 +21,13 @@ heroku login
 ```
 heroku create appname
 ```
+create two apps: one for the website and another one for the database
 
 ### Create database
 ```
 heroku addons:create heroku-postgresql:hobby-dev --app appname
 ```
+create one for the site and another for database
 
 ### Get URI
 ```
