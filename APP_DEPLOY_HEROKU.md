@@ -65,7 +65,7 @@ heroku git:remote -a appname
 git push heroku master
 ```
 
-### Add table to remote database
+### Add table to website remote database
 ```
 heroku run python --app appname
 >>> from app import db

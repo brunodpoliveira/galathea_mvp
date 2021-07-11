@@ -26,8 +26,7 @@
           document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           $.get("/get", { msg: rawText }).done(function(data)
           {
-            var botHtml = '<p class="botText"><span>' + data + <div> <a href="thumbs.html" target="targetframe">Link to Page 3</a>
-</div> + '</span></p>';
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
             $("#chatbox").append(botHtml);
             document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
           });
