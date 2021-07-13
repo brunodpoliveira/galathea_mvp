@@ -3,7 +3,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.response_selection import get_first_response
 import spacy
 
-spacy.load('pt_core_news_lg')
+spacy.load('pt_core_news_md')
 # --------------------------------------
 # Instantiate agent
 """
