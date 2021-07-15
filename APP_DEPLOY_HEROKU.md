@@ -27,7 +27,7 @@ create two apps: one for the website and another one for the database
 ```
 heroku addons:create heroku-postgresql:hobby-dev --app appname
 ```
-create one for the site and another for database
+create one for database
 
 ### Get URI
 ```
