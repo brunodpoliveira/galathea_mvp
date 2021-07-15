@@ -16,7 +16,6 @@ https://devcenter.heroku.com/articles/heroku-cli
 ```
 heroku login
 ```
-
 ### Create app
 ```
 heroku create appname
@@ -66,10 +65,11 @@ git push heroku master
 ```
 
 ### Add table to website remote database
+go to chatbot.py and make sure the greetings.yml training line is not commented
+on terminal, type:
 ```
 heroku run python --app appname
->>> from app import db
->>> db.create_all()
+>>> from app import *
 >>>exit()
 ```
 
@@ -84,7 +84,7 @@ statement:length/precision of conversation,persona to 100
 tag: length/precision of name to 100
 decomment the big training list (lines 48-53)
 comment the greetings training line (line 45)
-follow 'add table' instructions above (skip db.create_all() step) 
+follow 'add table' instructions above
 comment both training lists 
 ```
 
