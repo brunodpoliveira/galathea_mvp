@@ -53,7 +53,7 @@ preshed==3.0.5
 psutil==5.5.1
 psycopg2==2.8.3
 psycopg2-binary==2.8.3
-pt-core-news-md==2.3.0
+https://github.com/explosion/spacy-models/releases/tag/pt_core_news_md-2.3.0
 pyasn1==0.4.8
 pycparser==2.20
 pymongo==3.11.4
