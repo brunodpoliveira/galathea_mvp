@@ -1,3 +1,5 @@
 Flask~=2.0.1
 spacy~=2.3.7
 https://github.com/explosion/spacy-models/releases/download/pt_core_news_md-2.3.0/pt_core_news_md-2.3.0.tar.gz
+ChatterBot~=1.0.4
+chatterbot-corpus==1.2.0
