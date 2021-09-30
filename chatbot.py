@@ -26,13 +26,13 @@ bot = ChatBot('Sarah',
                                'maximum_similarity_threshold': 0.95
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
-              database_uri='postgres://iuznelluxbwsrr:04344ff8343fb2d24f6b53b255898a9cb97ed35024511a8c33cf62e83962e19b@ec2-52-22-238-188.compute-1.amazonaws.com:5432/d7adm1a9fde7ib',)
+              database_uri='postgres://ljlmrkytsrfups:bc6e9e315037054007e6a3508ee08bf92b599ba209076c4e774e487e36f653ab@ec2-52-86-25-51.compute-1.amazonaws.com:5432/da2135slnkfjp5',)
 
 # local - dev config
 # database_uri='postgresql://postgres:postgres@localhost/sarah_chatbot',)
 
 # online - prod config
-# database_uri='postgres://iuznelluxbwsrr:04344ff8343fb2d24f6b53b255898a9cb97ed35024511a8c33cf62e83962e19b@ec2-52-22-238-188.compute-1.amazonaws.com:5432/d7adm1a9fde7ib',)
+# database_uri = 'postgres://ljlmrkytsrfups:bc6e9e315037054007e6a3508ee08bf92b599ba209076c4e774e487e36f653ab@ec2-52-86-25-51.compute-1.amazonaws.com:5432/da2135slnkfjp5',)
 
 # --------------------------------------
 
