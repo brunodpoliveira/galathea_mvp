@@ -6,7 +6,7 @@ from chatbot import bot
 
 # GUI + website
 app = Flask(__name__)
-ENV = 'prod'
+ENV = 'dev'
 
 # --------------------------------------
 
